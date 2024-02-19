@@ -1,0 +1,274 @@
+*{box-sizing: border-box;}
+
+body {
+     background-color: #12141a;
+     color: #888888;
+     font-family: Verdana, sans-serif;
+     margin: 0px;
+}
+
+#wrapper {
+     background-color: #222631;
+}
+
+header {
+     background-color: #1f232c;
+     color: #FFFFFF;
+     font-family: Verdana, serif;
+     padding: 1em;
+}
+
+header a{
+     text-decoration: none;
+}
+
+header a:link{
+     color: #FFFFFF;
+}
+
+header a:visited{
+     color: #FFFFFF;
+}
+
+header a:hover{
+     color: #90C7E3;
+}
+
+h1 {
+     font-size: 2em;
+     font-variant: small-caps;
+     text-align: center;
+}
+
+h2 {
+     color: #ffffff;
+     font-family: Verdana, serif;
+}
+
+h3 {
+     font-family: Verdana, serif;
+}
+
+nav {
+     background-color: #333846;
+     text-align: center;
+     font-size: 1.2em;
+}
+
+nav a {
+     text-decoration: none;
+}
+
+nav a:link{
+     color:#5C7FA3;
+}
+
+nav a:visited{
+     color:#5C7FA3 ;
+}
+
+nav a:hover{
+     color:#8fc7ff;
+}
+
+nav ul{
+     display: flex;
+     flex-direction: column;
+     list-style: none;
+     margin: 0;
+     padding-left: 0;
+}
+
+nav li{
+     padding-top: 0.5em;
+     padding-bottom: 0.5em;
+     padding-left: 1em;
+     padding-right: 1em;
+     width: 100%;
+     border-top: 0;
+     border-bottom: 1px;
+     border-left: 0;
+     border-right: 0;
+     border-style: solid;
+     border-color: #2a2e3a
+}
+
+main {
+     display: block;
+     padding-top:0;
+     padding-bottom: 0;
+     padding-left: 1em;
+     padding-right: 1em;
+}
+
+dt {
+     color: #002171;
+     font-weight: bold;
+}
+
+.resort {
+     color: #1976D2;
+     font-size: 1.2em;
+}
+
+#homehero {
+     height: 300px;
+     background-image: url(hero_placeholder.jpg);
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+}
+
+section {
+     padding-left: 0.5em;
+     padding-right: 0.5em;
+}
+
+footer {
+     background-color: #222631;
+     font-size: .70em;
+     font-style: italic;
+     text-align: center;
+     padding: 1em;
+}
+
+#mobile {
+     display: inline;
+}
+
+#desktop {
+     display: none;
+}
+
+table {
+     border: #16181f;
+     border-width: 1px;
+     border-style: solid;
+     border-collapse: collapse;
+     margin-left: auto;
+     margin-right: auto;
+     width: 90%;
+}
+
+td {
+     padding: 5px;
+     border: #16181f;
+     border-width: 1px;
+     border-style: solid;
+     text-align: center;
+}
+
+th {
+     padding: 5px;
+     color: #FFFFFF;
+     border: #16181f;
+     border-width: 1px;
+     border-style: solid;
+}
+
+tr:nth-of-type(even){
+     background-color: #333846;
+}
+
+.text {
+     text-align: left;
+}
+
+form {
+     display: flex;
+     flex-direction: column;
+     padding-left: 1em;
+     width: 80%;
+}
+
+input {
+     margin-bottom: 0.5em;
+}
+
+textarea {
+     margin-bottom: 0.5em;
+}
+
+#reshero {
+     background-image: url(ocean.jpg);
+     background-size: 200% 100%;
+     background-repeat: no-repeat;
+     height: 300px;
+}
+
+@media (min-width: 600px) {
+     h1 {
+          font-size: 2em;
+          letter-spacing: 0.25em;
+     }
+
+     nav ul {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: space-around;
+          padding-right: 2em;
+     }
+
+     nav li {
+          width: 12em;
+          border-bottom: none;
+     }
+
+     section {
+          padding-left: 2em;
+          padding-right: 2em;
+     }
+     
+     #flow {
+          display: flex;
+          flex-direction: row;
+     }
+
+     #mobile {
+          display: none;
+     }
+
+     #desktop {
+          display: inline;
+     }
+
+     #homehero {
+          background-size: 100% 100%;
+     }
+
+     #yurthero {
+          background-size: 100% 100%;
+     }
+
+     #trailhero {
+          background-size: 100% 100%;
+     }
+
+     form {
+          display: grid;
+          grid-gap: 1em;
+          grid: auto / 10em 1fr;         
+          width: 60%;
+     }
+
+     input[type="submit"]{
+          grid-column: 2;
+          width: 9em;
+     }
+
+     #reshero {
+          background-size: 100% 100%;
+     }
+}
+
+@media (min-width: 1024px) {
+     nav ul{
+          padding-left: 10%;
+          padding-right: 10%;
+     }
+
+     #wrapper {
+          margin:auto;
+          width: 80%;
+     }
+}
