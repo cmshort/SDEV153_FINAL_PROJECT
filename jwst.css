@@ -1,5 +1,15 @@
 *{box-sizing: border-box;}
 
+a {
+     text-decoration: none;
+     color: #c09f6d;
+}
+
+a:hover {
+     color: #fad59e;
+     text-decoration:underline;
+}
+
 body {
      background-color: #12141a;
      color: #888888;
@@ -69,6 +79,7 @@ nav a:visited{
 
 nav a:hover{
      color:#8fc7ff;
+     text-decoration: none;
 }
 
 nav ul{
@@ -190,8 +201,15 @@ textarea {
      margin-bottom: 0.5em;
 }
 
-#reshero {
-     background-image: url(ocean.jpg);
+#schedulehero {
+     background-image: url(schedulehero.png);
+     background-size: 200% 100%;
+     background-repeat: no-repeat;
+     height: 300px;
+}
+
+#hoodhero {
+     background-image: url(hoodhero.jpg);
      background-size: 200% 100%;
      background-repeat: no-repeat;
      height: 300px;
@@ -238,11 +256,11 @@ textarea {
           background-size: 100% 100%;
      }
 
-     #yurthero {
+     #schedulehero {
           background-size: 100% 100%;
      }
 
-     #trailhero {
+     #hoodhero {
           background-size: 100% 100%;
      }
 
@@ -256,10 +274,6 @@ textarea {
      input[type="submit"]{
           grid-column: 2;
           width: 9em;
-     }
-
-     #reshero {
-          background-size: 100% 100%;
      }
 }
 
