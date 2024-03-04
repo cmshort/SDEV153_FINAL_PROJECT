@@ -6,9 +6,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="jwst.css" rel="stylesheet">
+  <script>
+    async function getSchedule(){
+      const response = await fetch('https://www.stsci.edu/files/live/sites/www/files/home/jwst/science-execution/observing-schedules/_documents/20240304_report_20240229.txt');
+      const schedule = await response.text();
+      console.log(schedule);
+    }
+  </script>
 </head>
 
-<body>
+<body onload="getSchedule();">
   <header>
     <h1><a href="index.html">James Webb Space Telescope</a></h1>
   </header>
