@@ -8,7 +8,7 @@
   <link href="jwst.css" rel="stylesheet">
   <script>
     async function getSchedule(){
-      const response = await fetch('https://www.stsci.edu/files/live/sites/www/files/home/jwst/science-execution/observing-schedules/_documents/20240304_report_20240229.txt');
+      const response = await fetch('/data/20240304_report_20240229.txt');
       const schedule = await response.text();
       console.log(schedule);
     }
