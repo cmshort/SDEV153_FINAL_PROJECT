@@ -144,6 +144,7 @@ table {
      border-width: 1px;
      border-style: solid;
      border-collapse: collapse;
+     font-size: 0.8vw;
      margin-left: auto;
      margin-right: auto;
      width: 90%;
@@ -154,12 +155,13 @@ td {
      border: #16181f;
      border-width: 1px;
      border-style: solid;
-     text-align: center;
+     text-align: left;
 }
 
 th {
      padding: 5px;
      color: #FFFFFF;
+     background-color: #0a0b0e;
      border: #16181f;
      border-width: 1px;
      border-style: solid;
