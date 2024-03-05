@@ -1,4 +1,6 @@
-*{box-sizing: border-box;}
+* {
+     box-sizing: border-box;
+}
 
 a {
      text-decoration: none;
@@ -7,14 +9,19 @@ a {
 
 a:hover {
      color: #fad59e;
-     text-decoration:underline;
+     text-decoration: underline;
 }
 
 body {
      background-color: #12141a;
      color: #888888;
-     font-family: Verdana, sans-serif;
+     font-family: sans-serif;
      margin: 0px;
+}
+
+#caption {
+     font-style: italic;
+     font-size: 0.8rem;
 }
 
 #wrapper {
@@ -22,32 +29,35 @@ body {
 }
 
 header {
-     background-color: #1f232c;
+     background-color: #12141a;
      color: #FFFFFF;
      font-family: Verdana, serif;
-     padding: 1em;
+     padding: 0;
 }
 
-header a{
+header a {
      text-decoration: none;
 }
 
-header a:link{
+header a:link {
      color: #FFFFFF;
 }
 
-header a:visited{
+header a:visited {
      color: #FFFFFF;
 }
 
-header a:hover{
+header a:hover {
      color: #90C7E3;
+     text-decoration: none;
 }
 
 h1 {
-     font-size: 2em;
+     font-size: 1.3em;
      font-variant: small-caps;
      text-align: center;
+     padding: 0.5em;
+     margin: 0;
 }
 
 h2 {
@@ -69,20 +79,20 @@ nav a {
      text-decoration: none;
 }
 
-nav a:link{
-     color:#5C7FA3;
+nav a:link {
+     color: #5C7FA3;
 }
 
-nav a:visited{
-     color:#5C7FA3 ;
+nav a:visited {
+     color: #5C7FA3;
 }
 
-nav a:hover{
-     color:#8fc7ff;
+nav a:hover {
+     color: #8fc7ff;
      text-decoration: none;
 }
 
-nav ul{
+nav ul {
      display: flex;
      flex-direction: column;
      list-style: none;
@@ -90,7 +100,7 @@ nav ul{
      padding-left: 0;
 }
 
-nav li{
+nav li {
      padding-top: 0.5em;
      padding-bottom: 0.5em;
      padding-left: 1em;
@@ -101,12 +111,12 @@ nav li{
      border-left: 0;
      border-right: 0;
      border-style: solid;
-     border-color: #2a2e3a
+     border-color: #2a2e3a;
 }
 
 main {
      display: block;
-     padding-top:0;
+     padding-top: 0;
      padding-bottom: 0;
      padding-left: 1em;
      padding-right: 1em;
@@ -152,7 +162,7 @@ footer {
 
 table {
      border-collapse: collapse;
-     font-size: 0.8vw;
+     font-size: 0.9rem;
      margin-left: auto;
      margin-right: auto;
      width: 90%;
@@ -160,7 +170,7 @@ table {
 
 td {
      padding: 5px;
-     padding-left:10px;
+     padding-left: 10px;
      border: #16181f;
      border-width: 1px;
      border-style: solid;
@@ -176,7 +186,7 @@ th {
      border-style: solid;
 }
 
-tr:nth-of-type(even){
+tr:nth-of-type(even) {
      background-color: #333846;
 }
 
@@ -188,11 +198,43 @@ form {
      display: flex;
      flex-direction: column;
      padding-left: 1em;
-     width: 80%;
+     width: 90%;
+}
+
+form label {
+     color: #FFFFFF;
+     margin-bottom: 5px;
+     margin-top: 10px;
 }
 
 input {
+     color: #FFFFFF;
+     background-color: #12141a;
+     border-color: #12141a;
+     border-style: solid;
+     border-width: 1px;
+     font-family: sans-serif;
+     font-size: 1rem;
+     line-height: 2em;
      margin-bottom: 0.5em;
+     padding: 5px;
+     padding-left: 10px;
+}
+
+input:focus {
+     outline: none;
+     border-color: #5C7FA3;
+}
+
+input[type="submit"] {
+     color: #FFFFFF;
+     background-color: #5C7FA3;
+     font-size: 16px;
+     margin-top: 25px;
+}
+
+input[type="submit"]:hover {
+     background-color: #8fc7ff;
 }
 
 textarea {
@@ -211,6 +253,27 @@ textarea {
      background-size: 200% 100%;
      background-repeat: no-repeat;
      height: 300px;
+}
+
+#redPip {
+     color: #FF0000;
+     font-weight: bold;
+}
+
+#gallery {
+     margin-left: auto;
+     margin-right: auto;
+     width: 90%;
+}
+
+.gallery-image {
+     border-width: 2px;
+     border-style: solid;
+     border-color: #000000;
+}
+
+.gallery-image:hover {
+     border-color: #fad59e;
 }
 
 @media (min-width: 600px) {
@@ -236,7 +299,7 @@ textarea {
           padding-left: 2em;
           padding-right: 2em;
      }
-     
+
      #flow {
           display: flex;
           flex-direction: row;
@@ -265,37 +328,42 @@ textarea {
      form {
           display: grid;
           grid-gap: 1em;
-          grid: auto / 10em 1fr;         
-          width: 60%;
+          grid: auto / 10em 1fr;
+          width: 550px;
      }
 
-     input[type="submit"]{
+     form label {
+          margin-bottom: 0px;
+          margin-top: 0px;
+     }
+
+     input[type="submit"] {
           grid-column: 2;
-          width: 9em;
+          margin-top: 20px;
      }
 }
 
 @media (min-width: 1024px) {
-     nav ul{
+     nav ul {
           padding-left: 10%;
           padding-right: 10%;
      }
 
      #wrapper {
-          margin:auto;
-          width: 80%;
+          margin: auto;
      }
 }
 
 /*This took a lot of time to work out, but this will radically alter the schedule table to improve readability on smaller displays */
 @media (max-width: 1200px) {
+
      #scheduleTable table,
-	#scheduleTable th,
-	#scheduleTable td,
-	#scheduleTable tr {
-		display: block;          
-		font-size: 0.7rem;
-	}
+     #scheduleTable th,
+     #scheduleTable td,
+     #scheduleTable tr {
+          display: block;
+          font-size: 0.8rem;
+     }
 
      #scheduleTable {
           width: 100%;
@@ -303,7 +371,7 @@ textarea {
 
      /*Remove widescreen*/
      #scheduleTable tr:first-child {
-          display:none;
+          display: none;
      }
 
      #scheduleTable tr {
@@ -312,21 +380,21 @@ textarea {
           border-style: solid;
           background-color: #333846;
           margin-bottom: 15px;
-	}    
+     }
 
      #scheduleTable th {
-          display:none;
+          display: none;
      }
 
      /* Cause the td to act like rows */
-     #scheduleTable td {                 
+     #scheduleTable td {
           border-bottom: 1px;
-          border-color: rgba(22, 24, 31, 0.3);          
+          border-color: rgba(22, 24, 31, 0.3);
           position: relative;
           padding-left: 50%;
           white-space: normal;
           text-align: left;
-	}
+     }
 
      /* Use pseudo class to format headers beside the td contents*/
      #scheduleTable td:before {
@@ -334,7 +402,7 @@ textarea {
           top: 6px;
           left: 5px;
           width: 45%;
-          padding-right: 10px;          
+          padding-right: 10px;
           text-align: left;
           font-weight: bold;
      }
