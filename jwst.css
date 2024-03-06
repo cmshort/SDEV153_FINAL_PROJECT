@@ -14,8 +14,9 @@ a:hover {
 
 body {
      background-color: #12141a;
-     color: #888888;
+     color: #9c958c;
      font-family: sans-serif;
+     font-size: 1.2rem;
      margin: 0px;
 }
 
@@ -132,13 +133,6 @@ dt {
      font-size: 1.2em;
 }
 
-#homehero {
-     height: 300px;
-     background-image: url(hero_placeholder.jpg);
-     background-repeat: no-repeat;
-     background-size: 100% 100%;
-}
-
 section {
      padding-left: 0.5em;
      padding-right: 0.5em;
@@ -150,6 +144,7 @@ footer {
      font-style: italic;
      text-align: center;
      padding: 1em;
+     padding-top: 2em;
 }
 
 #mobile {
@@ -186,7 +181,7 @@ th {
      border-style: solid;
 }
 
-tr:nth-of-type(even) {
+#scheduleTable tr:nth-of-type(even) {
      background-color: #333846;
 }
 
@@ -241,15 +236,53 @@ textarea {
      margin-bottom: 0.5em;
 }
 
-#schedulehero {
-     background-image: url(schedulehero.png);
+#homehero {
+     height: 300px;
+     background-image: url(images/homehero.jpg);
+     background-repeat: no-repeat;
+     background-size: 200% 100%;
+}
+
+#hoodhero {
+     background-image: url(images/hoodhero.jpg);
      background-size: 200% 100%;
      background-repeat: no-repeat;
      height: 300px;
 }
 
-#hoodhero {
-     background-image: url(hoodhero.jpg);
+#imageryhero {
+     background-image: url(images/imageryhero.jpg);
+     background-size: 200% 100%;
+     background-repeat: no-repeat;
+     background-position: 50%;
+     height: 300px;
+}
+
+#missionhero {
+     background-image: url(images/missionhero.jpg);
+     background-size: 100% 150%;
+     background-repeat: no-repeat;
+     background-position: 50%;
+     height: 300px;
+}
+
+#newsletterhero {
+     background-image: url(images/newsletterhero.jpg);
+     background-size: 100% 150%;
+     background-repeat: no-repeat;
+     background-position: 50%;
+     height: 300px;
+}
+
+#schedulehero {
+     background-image: url(images/schedulehero.png);
+     background-size: 200% 100%;
+     background-repeat: no-repeat;
+     height: 300px;
+}
+
+#perspectivehero {
+     background-image: url(images/perspectivehero.jpg);
      background-size: 200% 100%;
      background-repeat: no-repeat;
      height: 300px;
@@ -263,6 +296,8 @@ textarea {
 #gallery {
      margin-left: auto;
      margin-right: auto;
+     padding-left: 5%;
+     padding-right: 5%;
      width: 90%;
 }
 
@@ -274,6 +309,28 @@ textarea {
 
 .gallery-image:hover {
      border-color: #fad59e;
+}
+
+#perspective-graph {
+     margin-left: auto;
+     margin-right: auto;
+     background-color: #12141a;
+     border-radius: 5px;
+     font-size: 1.2rem;
+     width:90%;
+}
+
+#perspective-graph td{
+     background: none;
+     border-width: 0;
+     border-style:solid;
+     padding-top:10px;
+     text-align: right;     
+}
+
+#perspective-graph td:nth-child(2){
+     padding-right: 2%;
+     width: 90%;
 }
 
 @media (min-width: 600px) {
@@ -313,17 +370,15 @@ textarea {
           display: inline;
      }
 
-     #homehero {
+     #homehero,
+     #hoodhero,
+     #missionhero,
+     #newsletterhero,
+     #imageryhero,
+     #schedulehero,
+     #perspectivehero {
           background-size: 100% 100%;
-     }
-
-     #schedulehero {
-          background-size: 100% 100%;
-     }
-
-     #hoodhero {
-          background-size: 100% 100%;
-     }
+     }     
 
      form {
           display: grid;
