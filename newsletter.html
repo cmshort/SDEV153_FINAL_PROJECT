@@ -29,7 +29,8 @@
       <h2>Newsletter</h2>
       <p>Want to keep up with all the latest and greatest surrounding the James Webb Telescope?</p>
       <p>Sign up below to start receiving our very own space science newsletter published by our writers at Perspective Press! Each monthly issue features behind-the-scenes interviews and a deep dive into the most interesting targets and discoveries!</p><br>      
-      <form method="post" action="https://webdevbasics.net/scripts/pacific.php">
+      <!--<form method="post" action="https://webdevbasics.net/scripts/pacific.php">-->
+      <form method="POST" action="https://formspree.io/f/xgegkqog">  
         <label for="myEmail"><span id="redPip">*</span> E-mail:</label>
         <input type="email" id="myEmail" name="myEmail" required>
         <label for="myFName">First Name:</label>
@@ -37,7 +38,7 @@
         <label for="myLName">Last Name:</label>
         <input type="text" id="myLName" name="myLName">        
         <label for="myZip">ZipCode:</label>
-        <input type="text" id="myZip" name="myZip">
+        <input type="text" id="myZip" name="myZip" pattern="[0-9]{5}" title="Enter five digit zip code">
         <input type="submit" id="mySubmit" value="Submit">
       </form>
     </main>

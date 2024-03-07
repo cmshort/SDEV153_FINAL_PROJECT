@@ -146,11 +146,6 @@ main {
      margin-right: auto;
 }
 
-.resort {
-     color: #1976D2;
-     font-size: 1.2em;
-}
-
 footer {
      background-color: #222631;
      font-size: .70em;
@@ -158,14 +153,6 @@ footer {
      text-align: center;
      padding: 1em;
      padding-top: 2em;
-}
-
-#mobile {
-     display: inline;
-}
-
-#desktop {
-     display: none;
 }
 
 table {
@@ -262,15 +249,8 @@ textarea {
      height: 300px;
 }
 
-#hoodhero {
-     background-image: url(images/hoodhero.jpg);
-     background-repeat: no-repeat;
-     background-size: cover;
-     height: 300px;
-}
-
-#imageryhero {
-     background-image: url(images/imageryhero.jpg);
+#galleryhero {
+     background-image: url(images/galleryhero.jpg);
      background-size: cover;
      background-repeat: no-repeat;
      background-position: 50%;
@@ -382,6 +362,13 @@ textarea {
      text-decoration: none;
 }
 
+#jwst-model {
+     display: block;
+     width: 354px;
+     margin-left: auto;
+     margin-right: auto;
+}
+
 @media (min-width: 800px) {
      h1 {
           font-size: 2em;
@@ -389,7 +376,7 @@ textarea {
      }
 
      main {
-          width: 70%;
+          width: 90%;
      }
 
      nav {
@@ -409,22 +396,6 @@ textarea {
           border-bottom: none;
      }
 
-     /*
-     #homehero,
-     #hoodhero,
-     #missionhero,
-     #newsletterhero,
-     #imageryhero,
-     #schedulehero,
-     #perspectivehero {
-          background-size: 100% 100%;
-     }
-     
-     #perspectivehero {
-          background-size: cover;
-     }
-     */
-
      form {
           display: grid;
           grid-gap: 1em;
@@ -441,6 +412,12 @@ textarea {
           grid-column: 2;
           margin-top: 20px;
      }
+
+     #jwst-model {
+          float: right;
+          height: 280px;
+          margin-right: 20%;
+     }
 }
 
 @media (min-width: 1024px) {
@@ -450,6 +427,12 @@ textarea {
      }
      #wrapper {
           margin: auto;
+     }
+}
+
+@media (min-width: 1400px) {
+     main {
+          width: 70%;
      }
 }
 
