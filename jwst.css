@@ -79,7 +79,7 @@ dl {
 }
 
 dt {
-     color:#ffffff;
+     color: #ffffff;
      padding-bottom: 10px;
 }
 
@@ -321,18 +321,18 @@ textarea {
      background-color: #12141a;
      border-radius: 5px;
      font-size: 1.2rem;
-     width:90%;
+     width: 90%;
 }
 
-#perspective-graph td{
+#perspective-graph td {
      background: none;
      border-width: 0;
-     border-style:solid;
-     padding-top:10px;
-     text-align: right;     
+     border-style: solid;
+     padding-top: 10px;
+     text-align: right;
 }
 
-#perspective-graph td:nth-child(2){
+#perspective-graph td:nth-child(2) {
      padding-right: 2%;
      width: 90%;
 }
@@ -352,7 +352,7 @@ textarea {
      padding-bottom: 5px;
 }
 
-.blurb:hover{
+.blurb:hover {
      border-width: 1px;
      border-style: solid;
      border-color: #fad59e;
@@ -425,6 +425,7 @@ textarea {
           padding-left: 12%;
           padding-right: 12%;
      }
+
      #wrapper {
           margin: auto;
      }
